@@ -1,5 +1,4 @@
 <h1 align="center">:money_with_wings: FINANCES APP :money_with_wings:</h1> <br/>
-## Descrição do Projeto
 <p align="center">Simple app to control your money flow. You can add your costs and the money that you earned. </p>
 <p align="center"> It was developed usign :curly_loop: <a href="https://reactnative.dev/"> React Native</a> and :iphone: <a href="https://expo.io/"> Expo </a></p>
 <br/>
