@@ -4,18 +4,21 @@ import {Text, View} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { getStatusBarHeight } from 'react-native-status-bar-height';
-
-import firebase from './src/services/firebaseConnection'
-
+import AuthProvider from './src/contexts/auth'
 
 import Routes from './src/routes';
 
+console.disableYellowBox = true;
+
 export default function App() {
+  
+  
   return (
     <NavigationContainer>
-      <StatusBar backgroundColor="#131313"  style="light" translucent={true}/>
-      <Routes/>
+      <AuthProvider>
+        <StatusBar backgroundColor="#131313"  style="light" translucent={true}/>
+          <Routes/>
+      </AuthProvider>
     </NavigationContainer>
   );
 }

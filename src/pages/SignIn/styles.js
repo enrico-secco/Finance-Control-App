@@ -1,8 +1,12 @@
 import styled from 'styled-components/native';
 
+import { getStatusBarHeight} from 'react-native-status-bar-height';
+
+
 export const Background = styled.View`
 flex: 1;
 background-color:#131313;
+margin-top: ${getStatusBarHeight()};
 `;
 
 //Próprio do RN quando abre o teclado sobe pra cima os itens para o teclado não ficar por cima do input, mandando a view um pouco pra cima.
